@@ -6,6 +6,8 @@ ruby "3.1.2"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"
 
+gem "image_processing",           "1.12.2"
+
 gem "bcrypt",          "3.1.18"
 
 gem "faker",           "2.21.0"
@@ -82,4 +84,5 @@ end
 
 group :production do
   gem "pg", "1.3.5"
+  gem "aws-sdk-s3", "1.114.0", require: false
 end
